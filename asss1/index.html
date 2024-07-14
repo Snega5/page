@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example Page</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: blue; text-align: center;">Welcome to My CSS Example Page</h1>
+    
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: linen;
+        }
+        .center {
+            text-align: center;
+            color: red;
+        }
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+        .comment-example {
+            color: green;
+        }
+        .background-example {
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 20px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .flex-item {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+
+    <p class="center">This is a paragraph styled with an internal CSS class.</p>
+
+    <p id="unique" class="center">This paragraph has both an ID and a class.</p>
+
+    <div class="box">
+        <h2>Box Model Example</h2>
+        <p>This box demonstrates padding, borders, and margins.</p>
+    </div>
+
+    <p class="comment-example">/* This is a comment example */</p>
+
+    <div class="background-example">
+        <p>Background example with an image and color.</p>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">s</div>
+        <div class="grid-item">n</div>
+        <div class="grid-item">e</div>  
+        <div class="grid-item">g</div>
+        <div class="grid-item">a</div>
+        <div class="grid-item">.R</div>  
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CSS Example Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
